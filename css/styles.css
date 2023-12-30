@@ -743,6 +743,97 @@ p {
   width: 100%;
 }
 
+.effect-04 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding: 0.25em 0;
+  font-size: 16px;
+  font-family: PT Sans, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid dimgray;
+}
+
+.effect-04~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  transition: 0.4s;
+}
+
+.effect-04:focus~.focus-border,
+   .has-content.effect-04~.focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.effect-04~label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 4px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 1px;
+}
+
+.effect-04:focus~label,
+   .has-content.effect-04~label {
+  top: -16px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  transition: 0.3s;
+}
+
+.effect-13 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  background-color: transparent;
+  padding: 8px 0 4px;
+  border: 1px solid transparent;
+  border-bottom-color: dimgray;
+  transition: 0.4s;
+}
+
+.effect-13-border {
+  position: absolute;
+  height: 36px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: 0.4s;
+}
+
+.effect-13:focus {
+  padding: 4px 16px 8px;
+  transition: 0.4s;
+}
+
+.effect-13:focus~.effect-13-border {
+  width: 100%;
+  transition: 0.4s;
+  border: 2px solid dimgray;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -755,6 +846,10 @@ p {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -774,15 +869,65 @@ p {
   text-decoration-line: underline;
 }
 
-.row {
-  float: left;
-  width: 100%;
-  padding: 20px 0 50px;
+.grid-container {
+  margin: 3em auto;
+  width: 90%;
+  display: grid;
+  row-gap: 3rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.col-3 {
-  float: left;
-  width: 27.33%;
-  margin: 40px 3%;
+.sub-heading {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.form-input {
+  /*float: left;
+      width: 27.33%;*/
+  /*margin: 40px 3%;*/
   position: relative;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 544px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+
+/* No media query since the extra-large breakpoint has no upper bound on its width */
+
+.wrapper {
+  max-width: 1144px;
+  margin: 0 auto;
 }

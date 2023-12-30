@@ -6,7 +6,7 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <!--favicon -->
-    <link rel="icon" type="image/png" href="../favicon.png" >
+    <link href="../favicon.png" rel="icon" type="image/png">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -20,27 +20,68 @@
 <div class="container mx-auto">
     <section>
         <div class="text-center mt-12">
-            <h1 class="text-gray-900">Welcome To TailwindCSS Setup</h1>
+            <h1 class="text-gray-900">Welcome To TailwindCSS</h1>
             <h3 class="font-body underline">A Start-up For Custom Forms </h3>
         </div>
     </section>
-    <div class="row">
-        <div class="container">
-            <div class="col-3">
-                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+    <div class="wrapper">
+        <h3 class="text-left sub-heading">effect-11</h3>
+        <div class="grid-container">
+            <div class="form-input">
+                <input class="effect-11" placeholder="Full name" type="text"/>
                 <span class="effect-11-bg"></span>
             </div>
-            <div class="col-3">
-                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+            <div class="form-input">
+                <input class="effect-11" placeholder="Full name" type="text"/>
                 <span class="effect-11-bg"></span>
             </div>
-            <div class="col-3">
-                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+            <div class="form-input">
+                <input class="effect-11" placeholder="Full name" type="text"/>
                 <span class="effect-11-bg"></span>
             </div>
         </div>
+        <div class="wrapper">
+            <h3 class="text-left sub-heading">effect-04</h3>
+            <div class="grid-container">
+                <div class="form-input js-input-effect">
+                    <input class="effect-04" placeholder="" type="text"/>
+                    <label>Full Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-input js-input-effect">
+                    <input class="effect-04" placeholder="" type="text"/>
+                    <label>Full Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-input js-input-effect">
+                    <input class="effect-04" placeholder="" type="text"/>
+                    <label>Full Name</label>
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h3 class="text-left sub-heading">effect-13</h3>
+            <div class="grid-container">
+                <div class="form-input">
+                    <input class="effect-13" placeholder="Full name"
+                           type="text"/>
+                    <span class="effect-13-border"></span>
+                </div>
+                <div class="form-input">
+                    <input class="effect-13" placeholder="Full name"
+                           type="text"/>
+                    <span class="effect-13-border"></span>
+                </div>
+                <div class="form-input">
+                    <input class="effect-13" placeholder="Full name"
+                           type="text"/>
+                    <span class="effect-13-border"></span>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
 </div>
 <!-- jquery scripts -->
 <script src="../js/jquery-3.6.4.min.js"></script>

@@ -141,20 +141,72 @@
       display: grid;
       place-items: center;
    }
+   .grid-container {
+      margin: 3em auto;
+      width: 90%;
+      display: grid;
+      row-gap: 3rem;
+      column-gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   }
+   .sub-heading-container {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .sub-heading {
+      margin-bottom: 1em;
+      margin-left: 1em;
+   }
    .row {
       float: left;
       width: 100%;
       padding: 20px 0 50px;
    }
-   .col-3 {
-      float: left;
-      width: 27.33%;
-      margin: 40px 3%;
+   .form-input {
+      /*float: left;
+      width: 27.33%;*/
+      /*margin: 40px 3%;*/
       position: relative;
    }
    .outer-container {
       margin: 0 auto;
       max-width: 1200px;
+   }
+
+   /* Extra small devices (portrait phones, less than 576px) */
+   @media (max-width: 575px) {
+      .wrapper {
+         max-width: 100%;
+      }
+   }
+
+   /* Small devices (landscape phones, less than 768px) */
+   @media (max-width: 767px) {
+      .wrapper {
+         max-width: 544px;
+      }
+   }
+
+   /* Medium devices (tablets, less than 992px) */
+   @media (max-width: 991px) {
+      .wrapper {
+         max-width: 720px;
+      }
+   }
+
+   /* Large devices (desktops, less than 1200px) */
+   @media (max-width: 1199px) {
+      .wrapper {
+         max-width: 960px;
+      }
+   }
+
+   /* Extra large devices (large desktops) */
+   /* No media query since the extra-large breakpoint has no upper bound on its width */
+
+   .wrapper {
+      max-width: 1144px;
+      margin: 0 auto;
    }
 }
 
@@ -190,5 +242,91 @@
    .effect-11:focus~.effect-11-bg {
       transition: 0.3s;
       width: 100%;
+   }
+
+   .effect-04 {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      padding: 0.25em 0;
+      font-size: 16px;
+      @apply font-body;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      @apply text-gray-800;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid dimgray;
+
+   }
+
+   .effect-04~.focus-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      @apply bg-gray-800;
+      transition: 0.4s;
+   }
+   .effect-04:focus~.focus-border,
+   .has-content.effect-04~.focus-border {
+      width: 100%;
+      transition: 0.4s;
+   }
+   .effect-04~label {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 4px;
+      color: #aaa;
+      transition: 0.3s;
+      z-index: -1;
+      letter-spacing: 1px;
+   }
+   .effect-04:focus~label,
+   .has-content.effect-04~label {
+      top: -16px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      @apply text-gray-800;
+      transition: 0.3s;
+   }
+
+   .effect-13 {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      @apply font-body;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      @apply text-gray-800;
+      background-color: transparent;
+      padding: 8px 0 4px;
+      border: 1px solid transparent;
+      border-bottom-color: dimgray;
+      transition: 0.4s;
+
+   }
+
+   .effect-13-border {
+      position: absolute;
+      height: 36px;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: 0.4s;
+   }
+
+   .effect-13:focus {
+      padding: 4px 16px 8px;
+      transition: 0.4s;
+   }
+
+   .effect-13:focus~.effect-13-border {
+      width: 100%;
+      transition: 0.4s;
+      border: 2px solid dimgray;
    }
 }
