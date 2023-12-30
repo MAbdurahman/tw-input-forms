@@ -1,0 +1,30 @@
+{
+  "name": "tw-input-forms",
+  "version": "1.0.0",
+  "description": "Tailwind custom input forms",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/styles.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAbdurahman/tw-input-forms.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "and",
+    "TailwindCSS"
+  ],
+  "author": "Mahdi Abdurrahman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MAbdurahman/tw-input-forms/issues"
+  },
+  "homepage": "https://github.com/MAbdurahman/tw-input-forms#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
