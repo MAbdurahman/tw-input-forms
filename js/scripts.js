@@ -7,7 +7,7 @@ $(window).on('load', function () {
 });
 
 /*=============================================
-         js-math-game scripts
+         tw-input-forms scripts
 ================================================*/
 $(function () {
 

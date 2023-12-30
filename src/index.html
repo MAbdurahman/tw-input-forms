@@ -7,77 +7,41 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <!--favicon -->
     <link rel="icon" type="image/png" href="../favicon.png" >
-    <!-- normalize styles-->
-    <link rel="stylesheet" href="../css/normalize@8.0.1.css">
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
-            rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+          rel="stylesheet">
     <!--main styles-->
     <link href="../css/styles.css" rel="stylesheet">
-    <title>tw-css-bookmark-website</title>
+    <title>tw-input-forms</title>
 </head>
-<body class="overflow-x-hidden">
-<nav class="container relative mx-auto p-6">
-    <!-- Flex Container For Nav Items -->
-    <div class="flex items-center justify-between space-x-20 my-6">
-        <!-- Logo -->
-        <div class="z-30">
-            <!--<img src="img/logo-bookmark.svg" alt="logo" id="logo" />-->
-            <img src="./../img/logo-bookmark.svg" alt="logo" id="logo" />
+<body class="bg-gray-200">
+<div class="container mx-auto">
+    <section>
+        <div class="text-center mt-12">
+            <h1 class="text-gray-900">Welcome To TailwindCSS Setup</h1>
+            <h3 class="font-body underline">A Start-up For Custom Forms </h3>
         </div>
-        
-        <!-- Menu Items -->
-        <div
-                class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex"
-        >
-            <a href="#features" class="tracking-widest hover:text-softRed"
-            >Features</a
-            >
-            <a href="#download" class="tracking-widest hover:text-softRed"
-            >Download</a
-            >
-            <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
-            
-            <a
-                    href="#"
-                    class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white"
-            >Login</a
-            >
-        </div>
-        <!-- Hamburger Button -->
-        <button
-                id="menu-btn"
-                class="z-30 block md:hidden focus:outline-none hamburger"
-        >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-        </button>
-    </div>
-    <!-- Mobile Menu -->
-    <div
-            id="menu"
-            class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
-    >
-        <div class="w-full py-3 text-center">
-            <a href="#features" class="block hover:text-softRed">Features</a>
-        </div>
-        <div class="w-full py-3 text-center">
-            <a href="#download" class="block hover:text-softRed">Download</a>
-        </div>
-        <div class="w-full py-3 text-center">
-            <a href="#faq" class="block hover:text-softRed">FAQ</a>
-        </div>
-        <div class="w-full py-3 text-center">
-            <a href="#" class="block hover:text-softRed">Login</a>
+    </section>
+    <div class="row">
+        <div class="container">
+            <div class="col-3">
+                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+                <span class="effect-11-bg"></span>
+            </div>
+            <div class="col-3">
+                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+                <span class="effect-11-bg"></span>
+            </div>
+            <div class="col-3">
+                <input type="text" class="effect-11" placeholder="Placeholder Text" />
+                <span class="effect-11-bg"></span>
+            </div>
         </div>
     </div>
-</nav>
-
+    
+</div>
 <!-- jquery scripts -->
 <script src="../js/jquery-3.6.4.min.js"></script>
 <!-- sweetalert scripts-->
