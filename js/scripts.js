@@ -23,4 +23,15 @@ $(function () {
         }
     });
 
+    //**************** effect 07 scripts ****************//
+    $('.effect-07').val('');
+
+    $('.js-effect-07 input').focusout(function () {
+        if ($(this).val() !== '') {
+            $(this).addClass('has-content');
+        } else {
+            $(this).removeClass('has-content');
+        }
+    });
+
 });
