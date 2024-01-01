@@ -709,6 +709,8 @@ p {
   }
 }
 
+/**************** effect-11 styles ****************/
+
 .effect-11 {
   position: relative;
   width: 100%;
@@ -742,6 +744,8 @@ p {
   transition: 0.3s;
   width: 100%;
 }
+
+/**************** effect-04 styles ****************/
 
 .effect-04 {
   position: relative;
@@ -797,6 +801,8 @@ p {
   transition: 0.3s;
 }
 
+/**************** effect-13 styles ****************/
+
 .effect-13 {
   position: relative;
   width: 100%;
@@ -833,6 +839,8 @@ p {
   transition: 0.4s;
   border: 2px solid dimgray;
 }
+
+/**************** effect-07 styles ****************/
 
 .form-input-07 {
   position: relative;
@@ -894,6 +902,43 @@ p {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
   transition: 0.3s;
+}
+
+/**************** effect-02 styles ****************/
+
+.effect-02 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding: .5em 1em;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  background-color: transparent;
+  border: 1px solid dimgray;
+}
+
+.effect-02-bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  transition: 0.3s;
+}
+
+.effect-02:focus~.effect-02-bg {
+  transition: 0.3s;
+  width: 100%;
+  left: 0;
 }
 
 .mx-auto {

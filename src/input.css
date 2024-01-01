@@ -212,6 +212,7 @@
 }
 
 @layer components {
+   /**************** effect-11 styles ****************/
    .effect-11 {
       position: relative;
       width: 100%;
@@ -244,7 +245,7 @@
       transition: 0.3s;
       width: 100%;
    }
-
+   /**************** effect-04 styles ****************/
    .effect-04 {
       position: relative;
       width: 100%;
@@ -294,6 +295,7 @@
       transition: 0.3s;
    }
 
+   /**************** effect-13 styles ****************/
    .effect-13 {
       position: relative;
       width: 100%;
@@ -331,6 +333,7 @@
       border: 2px solid dimgray;
    }
 
+   /**************** effect-07 styles ****************/
    .form-input-07 {
       position: relative;
       width: 100%;
@@ -384,6 +387,39 @@
       letter-spacing: 1px;
       @apply text-gray-800;
       transition: 0.3s;
+   }
+/**************** effect-02 styles ****************/
+   .effect-02 {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      padding: .5em 1em;
+      @apply font-body;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      @apply text-gray-800;
+      background-color: transparent;
+      border: 1px solid dimgray;
+   }
+
+   .effect-02-bg {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 0;
+      height: 100%;
+      z-index: -1;
+      margin: 0;
+      padding: 0;
+      @apply bg-gray-300;
+      transition: 0.3s;
+   }
+
+   .effect-02:focus~.effect-02-bg {
+      transition: 0.3s;
+      width: 100%;
+      left: 0;
    }
 
 }
