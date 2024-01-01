@@ -15,7 +15,7 @@ $(function () {
 //**************** effect 04 secripts ****************//
     $('.effect-04').val('');
 
-    $('.js-input-effect input').focusout(function () {
+    $('.js-effect-04 input').focusout(function () {
         if ($(this).val() !== '') {
             $(this).addClass('has-content');
         } else {
@@ -34,4 +34,14 @@ $(function () {
         }
     });
 
+
+    $('.effect-05').val('');
+
+    $('.js-effect-05 input').focusout(function () {
+        if ($(this).val() !== '') {
+            $(this).addClass('has-content');
+        } else {
+            $(this).removeClass('has-content');
+        }
+    });
 });
