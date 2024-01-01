@@ -83,7 +83,8 @@
    }
    body {
       height: 100vh;
-      margin: 0;
+      margin: 0 0 8em;
+      padding: 0 0 8em;
       overflow-x: hidden;
       display: flex;
       justify-content: center;
@@ -262,7 +263,7 @@
 
    }
 
-   .effect-04~.focus-border {
+   .effect-04~.focus-border-04 {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -271,8 +272,8 @@
       @apply bg-gray-800;
       transition: 0.4s;
    }
-   .effect-04:focus~.focus-border,
-   .has-content.effect-04~.focus-border {
+   .effect-04:focus~.focus-border-04,
+   .has-content.effect-04~.focus-border-04 {
       width: 100%;
       transition: 0.4s;
    }
@@ -420,6 +421,63 @@
       transition: 0.3s;
       width: 100%;
       left: 0;
+   }
+
+   /**************** effect-05 styles ****************/
+   .form-input-05 {
+      position: relative;
+      width: 100%;
+      margin: 8px 3%;
+   }
+   .effect-05 {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      padding: 0.25em 0;
+      @apply font-body;
+      font-size: 20px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      @apply text-gray-800;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid dimgray;
+
+   }
+
+   .effect-05~.focus-border-05 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      @apply bg-gray-800;
+      transition: 0.4s;
+   }
+   .effect-05:focus~.focus-border-05,
+   .has-content.effect-05~.focus-border-05 {
+      width: 100%;
+      transition: 0.4s;
+      left: 0;
+   }
+   .effect-05~label {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 4px;
+      color: #aaa;
+      transition: 0.3s;
+      z-index: -1;
+      letter-spacing: 1px;
+   }
+   .effect-05:focus~label,
+   .has-content.effect-05~label {
+      top: -16px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      @apply text-gray-800;
+      transition: 0.3s;
+
    }
 
 }
