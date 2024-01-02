@@ -971,7 +971,7 @@ p {
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 2px;
+  height: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
   transition: 0.4s;
@@ -988,7 +988,8 @@ p {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 4px;
+  /*top: 4px;*/
+  top: 0;
   color: #aaa;
   transition: 0.3s;
   z-index: -1;
@@ -1056,9 +1057,6 @@ p {
 }
 
 .form-input {
-  /*float: left;
-      width: 27.33%;*/
-  /*margin: 40px 3%;*/
   position: relative;
 }
 
