@@ -34,10 +34,21 @@ $(function () {
         }
     });
 
-
+    //**************** effect 05 scripts ****************//
     $('.effect-05').val('');
 
     $('.js-effect-05 input').focusout(function () {
+        if ($(this).val() !== '') {
+            $(this).addClass('has-content');
+        } else {
+            $(this).removeClass('has-content');
+        }
+    });
+
+    //**************** effect 08 scripts ****************//
+    $('.effect-08').val('');
+
+    $('.js-effect-08 input').focusout(function () {
         if ($(this).val() !== '') {
             $(this).addClass('has-content');
         } else {
