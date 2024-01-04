@@ -785,18 +785,20 @@ p {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 4px;
-  color: #aaa;
+  top: 6px;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
   transition: 0.3s;
   z-index: -1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .effect-04:focus~label,
    .has-content.effect-04~label {
   top: -16px;
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 1px;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
   transition: 0.3s;
@@ -971,9 +973,9 @@ p {
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 1px;
+  height: 2px;
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   transition: 0.4s;
 }
 
@@ -988,19 +990,121 @@ p {
   position: absolute;
   left: 0;
   width: 100%;
-  /*top: 4px;*/
-  top: 0;
-  color: #aaa;
+  top: 12px;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
   transition: 0.3s;
   z-index: -1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .effect-05:focus~label,
    .has-content.effect-05~label {
   top: -16px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  transition: 0.3s;
+}
+
+/**************** effect 08 ****************/
+
+.form-input-08 {
+  position: relative;
+  width: 100%;
+  margin: 8px 3%;
+}
+
+.effect-08 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: PT Sans, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  background-color: transparent;
+  border: 1px solid dimgray;
+}
+
+.effect-08~.focus-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.effect-08:focus~.focus-background,
+   .has-content.effect-08~.focus-background {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.effect-08~.focus-background:before,
+   .effect-08~.focus-background:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.effect-08:focus~.focus-background:before,
+   .has-content.effect-08~.focus-background:before {
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.effect-08~.focus-background:after {
+  left: auto;
+  right: 50%;
+  top: auto;
+  bottom: 50%;
+}
+
+.effect-08:focus~.focus-background:after,
+   .has-content.effect-08~.focus-background:after {
+  transition: 0.3s;
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.effect-08~label {
+  position: absolute;
+  left: 8px;
+  width: 100%;
+  top: 12px;
   font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  transition: 0.3s;
+  z-index: -1;
   letter-spacing: 2px;
+}
+
+.effect-08:focus~label,
+   .has-content.effect-08~label {
+  top: -24px;
+  left: 0;
+  font-size: 18px;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
   transition: 0.3s;
