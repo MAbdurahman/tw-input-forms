@@ -1,4 +1,4 @@
-# 00-tailwind-setup
+# tw-input-forms
 
 This is a simple Tailwind CSS setup to start building projects using Tailwind CLI.
 
