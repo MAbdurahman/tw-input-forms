@@ -1110,6 +1110,48 @@ p {
   transition: 0.3s;
 }
 
+/**************** effect 12 ****************/
+
+.form-input-12 {
+  position: relative;
+  width: 100%;
+  margin: 8px 3%;
+}
+
+.effect-12 {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-family: PT Sans, sans-serif;
+  background-color: transparent;
+  padding: 8px 16px 4px;
+  border: 1px solid transparent;
+  border-bottom-color: dimgray;
+  transition: 0.3s;
+}
+
+.effect-12-border {
+  position: absolute;
+  height: 36px;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  transition: 0.3s;
+}
+
+.effect-12:focus {
+  transition: 0.3s;
+}
+
+.effect-12:focus~.effect-12-border {
+  width: 100%;
+  transition: 0.3s;
+  border-bottom: 2px solid #545353;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1155,6 +1197,17 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.grid-container-12 {
+  /*margin: 3em auto 1em;*/
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  row-gap: 3rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .sub-heading {
   margin-bottom: 1em;
   margin-left: 1em;
@@ -1162,6 +1215,11 @@ p {
 
 .form-input {
   position: relative;
+}
+
+.extra-margin-bottom {
+  margin-bottom: 34rem;
+  padding-bottom: 34rem;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
