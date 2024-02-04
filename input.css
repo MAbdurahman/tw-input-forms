@@ -42,6 +42,9 @@
       /*16px */
       scroll-behavior: smooth;
    }
+   body {
+      min-height: 100vh;
+   }
 
    /* Large Devices (Desktops & Laptops) */
    @media (min-width: 1200px) and (max-width: 1299px) {}
