@@ -546,6 +546,7 @@ body {
 @media (max-width: 820px) {
   body {
     margin-bottom: 4em;
+    overflow-x: hidden;
   }
 }
 
