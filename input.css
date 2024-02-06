@@ -41,6 +41,8 @@
       font-size: 62.5%;
       /*16px */
       scroll-behavior: smooth;
+      overflow-x: hidden;
+      -ms-overflow-x: hidden;
    }
 
 
